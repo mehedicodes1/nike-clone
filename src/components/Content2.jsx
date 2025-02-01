@@ -44,7 +44,7 @@ const Content2 = () => {
             <div className="flex overflow-x-scroll gap-2" ref={sliderRef}>
                 <div className="flex-shrink-0">
                     <Product
-                        images="http://www.trego.cooo.in/images/nike/5.png"
+                        images="https://raw.githubusercontent.com/mehedicodes1/nike-website-clone/main/public/5.png"
                         title="Nike Zoom Fly 6"
                         description="Road Racing Shoes"
                         price="270"
@@ -52,7 +52,7 @@ const Content2 = () => {
                 </div>
                 <div className="flex-shrink-0">
                     <Product
-                        images="http://www.trego.cooo.in/images/nike/6.png"
+                        images="https://raw.githubusercontent.com/mehedicodes1/nike-website-clone/main/public/6.png"
                         title="Racer Pink"
                         description="Men's Shoes"
                         price="220"
@@ -60,7 +60,7 @@ const Content2 = () => {
                 </div>
                 <div className="flex-shrink-0">
                     <Product
-                        images="http://www.trego.cooo.in/images/nike/7.png"
+                        images="https://raw.githubusercontent.com/mehedicodes1/nike-website-clone/main/public/7.png"
                         title="Nike Air Max Dn"
                         description="Men's Shoes"
                         price="240"
@@ -68,7 +68,7 @@ const Content2 = () => {
                 </div>
                 <div className="flex-shrink-0">
                     <Product
-                        images="http://www.trego.cooo.in/images/nike/4.png"
+                        images="https://raw.githubusercontent.com/mehedicodes1/nike-website-clone/main/public/8.png"
                         title="Nike Pegasus Plus"
                         description="Men's Shoes"
                         price="270"
@@ -76,7 +76,7 @@ const Content2 = () => {
                 </div>
                 <div className="flex-shrink-0">
                     <Product
-                        images="http://www.trego.cooo.in/images/nike/3.png"
+                        images="https://raw.githubusercontent.com/mehedicodes1/nike-website-clone/main/public/3.png"
                         title="Nike Pegasus 41"
                         description="Men's Shoes"
                         price="210"
