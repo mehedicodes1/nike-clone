@@ -11,9 +11,9 @@ function SideMenu() {
     };
 
     return (
-        <div className="md:hidden">
+        <div className="md:hidden hover:bg-gray-200 rounded-full p-2 w-10 h-10">
             {/* Menu Toggle Button */}
-            <button onClick={toggleMenu} className="text-black mx-2 items-center">
+            <button onClick={toggleMenu} className="text-black flex items-center justify-center">
                 <MenuIcon />
             </button>
 

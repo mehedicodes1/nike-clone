@@ -1,11 +1,10 @@
-import { useState } from "react";
+
 import { BagIcon, HeartIcon, SearchIcon } from "../assets/svg.jsx";
 import logo from "../assets/images/nike-image.png";
 import jordan from "../assets/images/jordan-image.png";
 import SideMenu from "./SideMenu.jsx";
 
 function Header() {
-    const [menuOpen, setMenuOpen] = useState(false);
 
     return (
         <header className="w-full shadow-sm bg-white">
@@ -31,7 +30,16 @@ function Header() {
                 <div className="flex items-center">
                     <img className="h-[25px]" alt="Logo" src={logo} />
                 </div>
-                <div className="flex items-center space-x-3">
+                <div className="hidden md:block bg-white border-t border-gray-200 py-4 px-6">
+                    <nav className="flex space-x-4">
+                        <a href="#" className="text-black hover:text-gray-500">New & Featured</a>
+                        <a href="#" className="text-black hover:text-gray-500">Men</a>
+                        <a href="#" className="text-black hover:text-gray-500">Women</a>
+                        <a href="#" className="text-black hover:text-gray-500">Kids</a>
+                        <a href="#" className="text-black hover:text-gray-500">Sale</a>
+                    </nav>
+                </div>
+                <div className="flex items-center space-x-3 justify-center">
                     <div className="bg-gray-100 rounded-2xl w-[150px] h-10 flex items-center px-2 cursor-pointer hover:bg-gray-200">
                         <SearchIcon className="text-black" />
                         <p className="text-gray-400 ml-2">Search</p>
@@ -43,21 +51,9 @@ function Header() {
                         <BagIcon />
                     </button>
                     <SideMenu />
+
                 </div>
             </div>
-
-            {/* Mobile Menu */}
-            {menuOpen && (
-                <div className="md:hidden bg-white border-t border-gray-200 py-4 px-6">
-                    <nav className="flex flex-col space-y-4">
-                        <a href="#" className="text-black hover:text-gray-500">New & Featured</a>
-                        <a href="#" className="text-black hover:text-gray-500">Men</a>
-                        <a href="#" className="text-black hover:text-gray-500">Women</a>
-                        <a href="#" className="text-black hover:text-gray-500">Kids</a>
-                        <a href="#" className="text-black hover:text-gray-500">Sale</a>
-                    </nav>
-                </div>
-            )}
         </header>
     );
 }
